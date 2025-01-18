@@ -69,3 +69,7 @@ The application is adapted to different device sizes and is compatible with the 
 of major browsers (e.g., Chrome, Firefox, Safari, and Edge).
 
 Added smooth transitions or animations when navigating between questions.
+
+```bash
+Made With ❤️ and Patience !
+```
