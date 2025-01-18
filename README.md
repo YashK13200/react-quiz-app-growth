@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+# Quiz Land - A Quiz Web Application 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Description :
+https://github.com/user-attachments/assets/3c16ed24-6fa0-4f0a-8762-2af9fc6068f1
 
-Currently, two official plugins are available:
+ A quiz application that meets the criteria detailed below. build it using React.js and Tailwind CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 1. Quiz Layout & Flow:
 
-## Expanding the ESLint configuration
+The application have a start page where the user submit their email address.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Then the application display 15 questions to the user.
 
-- Configure the top-level `parserOptions` property like this:
+A timer is displayed on the top of the page, counting down from 30 minutes. The quiz auto-submit when the timer reaches zero.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+# 2. Navigation:
+
+Users are able to navigate to a specific question.
+
+An overview panel Which show all questions indicating:
+
+Which questions the user has visited.
+
+Which questions have been attempted.
+
+# 3. End of Quiz:
+
+After the quiz or when the timer ends, users are directed to a report page.
+
+This report display each question with the user's answer and the correct answer side by side or in a format that is easy to compare.
+
+# 4. Data Source:
+
+   ```bash
+Fetching the quiz questions from
+https://opentdb.com/api.php?amount=15 API.
 ```
+From this API we use the question parameter as the question to be displayed.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Choices to be shown to the user for each question is a concatenated array of correct_answer and incorrect_answers parameters.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Correct answer for every question is provided in correct_answer parameter.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+The application is adapted to different device sizes and is compatible with the latest versions
+of major browsers (e.g., Chrome, Firefox, Safari, and Edge).
+
+Added smooth transitions or animations when navigating between questions.
