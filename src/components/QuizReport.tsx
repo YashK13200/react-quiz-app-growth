@@ -1,4 +1,3 @@
-// import React from 'react';
 import { Question } from '../types';
 import { CheckCircle, XCircle, RotateCcw } from 'lucide-react';
 
