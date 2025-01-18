@@ -3,6 +3,30 @@
 # Description :
 https://github.com/user-attachments/assets/3c16ed24-6fa0-4f0a-8762-2af9fc6068f1
 
+
+## Setup Instructions
+
+Follow these steps to set up and run the project locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YashK13200/react-quiz-app-growth.git
+cd react-quizland
+```
+
+Install dependencies:
+ ```bash
+   npm install
+   ```
+
+Start the frontend development server:
+ ```bash
+ npm run dev
+   ```
+This will start the frontend on http://localhost:5171.
+
+
  A quiz application that meets the criteria detailed below. build it using React.js and Tailwind CSS
 
 # 1. Quiz Layout & Flow:
