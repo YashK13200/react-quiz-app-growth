@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import { Question, QuizState } from './types';
 import { StartPage } from './components/StartPage';
 import { QuestionNavigation } from './components/QuestionNavigation';

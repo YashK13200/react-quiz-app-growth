@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Circle, CheckCircle, AlertCircle } from 'lucide-react';
 
 interface QuestionNavigationProps {
