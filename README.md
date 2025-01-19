@@ -26,6 +26,11 @@ Start the frontend development server:
    ```
 This will start the frontend on http://localhost:5171.
 
+## Technologies Used
+
+- **Frontend**: React.js + Vite , Tailwind CSS
+- **Icons**: React lucid 
+- **API**:  https://opentdb.com/api.php?amount=15
 
  A quiz application that meets the criteria detailed below. build it using React.js and Tailwind CSS
 
